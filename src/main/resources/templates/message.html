@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title th:remove="all">Template for HTML email</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>
+  Hello, <span th:text="${name}">Peter Static</span>!
+</p>
+
+<p>
+  Happy birthday from our family
+  <span th:text="${subscriptionDate}">29-05-23</span>
+</p>
+
+<ul th:remove="all-but-first">
+
+</ul>
+<p>
+  Regards, <br/>
+  <em>The CodingNConcepts Team</em>
+</p>
+</body>
+</html>
